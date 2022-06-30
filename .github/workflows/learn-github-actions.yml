@@ -2,7 +2,7 @@ name: learn-github-actions
 on:
   push:
     # prevents your workflow from running.
-    ignore-paths:
+    paths-ignore:
       - '**/README.md'
 jobs:
   check-bats-version:
