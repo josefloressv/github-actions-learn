@@ -1,5 +1,9 @@
 name: learn-github-actions
-on: [push]
+on:
+  push:
+    # prevents your workflow from running.
+    ignore-paths:
+      - '**/README.md'
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
