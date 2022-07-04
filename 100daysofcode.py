@@ -1,6 +1,6 @@
 from datetime import date
 
-start = date(2022, 7, 1)
+start = date(2022, 7, 1
 today = date.today()
 delta = today - start
 
