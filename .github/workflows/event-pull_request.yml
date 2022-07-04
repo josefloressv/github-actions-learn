@@ -1,0 +1,17 @@
+name: Only PR to Main
+on:
+  pull_request:
+    branches:
+    - main
+
+jobs:
+  run-in-develop:
+    name: First Job - Ubuntu
+    runs-on: ubuntu-latest
+    steps:
+    - name: Current date
+      run: date
+    - name: Greetings
+      run: echo "Hello world"
+    - name: Variables
+      run: env | sort
