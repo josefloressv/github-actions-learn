@@ -1,0 +1,15 @@
+name: Only develop Branch
+on:
+  push:
+    branches:
+    -  develop
+
+jobs:
+  run-in-develop:
+    name: First Job - Ubuntu
+    runs-on: ubuntu-latest
+    steps:
+    - name: Current date
+      run: date
+    - name: Greetings
+      run: echo "Hello world"
